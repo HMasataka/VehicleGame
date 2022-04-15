@@ -6,8 +6,11 @@ using System.Threading.Tasks;
 
 namespace VehicleGame
 {
-    class Motorcycle
+    class Motorcycle : Vehicle
     {
-
+        public Motorcycle(int positionX, int positionY, int speed, int distanceX, System.Windows.Forms.PictureBox picture) 
+            : base (positionX, positionY, speed, distanceX, picture) 
+        { 
+        }
     }
 }
