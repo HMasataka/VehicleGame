@@ -23,7 +23,7 @@ namespace VehicleGame
                 Speed = MinSpeed;
             }
 
-            return Speed
+            return Speed;
         }
     }
 }

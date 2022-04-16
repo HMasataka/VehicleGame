@@ -39,12 +39,12 @@ namespace VehicleGame
             x = pictureBoxAmbulance.Location.X;
             y = pictureBoxAmbulance.Location.Y;
             distanceW = formSizeW - pictureBoxAmbulance.Size.Width;
-            motorcycle = new Motorcycle(x, y, MotorcycleSpeed, distanceW, pictureBoxAmbulance);
+            ambulance = new Ambulance(x, y, AmbulanceSpeed, distanceW, pictureBoxAmbulance);
 
             x = pictureBoxHelicopter.Location.X;
             y = pictureBoxHelicopter.Location.Y;
             distanceW = formSizeW - pictureBoxHelicopter.Size.Width;
-            motorcycle = new Motorcycle(x, y, MotorcycleSpeed, distanceW, pictureBoxHelicopter);
+            helicopter = new Helicopter(x, y, HelicopterSpeed, distanceW, pictureBoxHelicopter, HelicopterMaxHigh, y);
 
             random = new Random();
 
