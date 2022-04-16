@@ -51,6 +51,7 @@ namespace VehicleGame
             this.buttonStart.TabIndex = 0;
             this.buttonStart.Text = "スタート";
             this.buttonStart.UseVisualStyleBackColor = true;
+            this.buttonStart.Click += new System.EventHandler(this.buttonStart_Click);
             // 
             // labelNotice
             // 
