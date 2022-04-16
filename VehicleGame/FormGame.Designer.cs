@@ -104,6 +104,10 @@ namespace VehicleGame
             this.pictureBoxMotorcycle.TabIndex = 2;
             this.pictureBoxMotorcycle.TabStop = false;
             // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // FormGame
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);

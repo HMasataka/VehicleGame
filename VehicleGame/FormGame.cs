@@ -73,5 +73,22 @@ namespace VehicleGame
                 labelNotice.Text = "終了";
             }
         }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            MoveVehicle();
+
+            int r = random.Next(100);
+            if (r == 0)
+            {
+                ambulance.TraficJam();
+                labelNotice.Text += "　渋滞発生";
+            }
+            else if (r == 50)
+            {
+                helicopter.Storm();
+                labelNotice.Text += "　嵐発生";
+            }
+        }
     }
 }
