@@ -30,6 +30,25 @@ namespace VehicleGame
             const int AmbulanceSpeed = 15;
             const int HelicopterSpeed = 30;
             const int HelicopterMaxHigh = 30;
+
+            int x = pictureBoxMotorcycle.Location.X;
+            int y = pictureBoxMotorcycle.Location.Y;
+            int distanceW = formSizeW - pictureBoxMotorcycle.Size.Width;
+            motorcycle = new Motorcycle(x, y, MotorcycleSpeed, distanceW, pictureBoxMotorcycle);
+
+            x = pictureBoxAmbulance.Location.X;
+            y = pictureBoxAmbulance.Location.Y;
+            distanceW = formSizeW - pictureBoxAmbulance.Size.Width;
+            motorcycle = new Motorcycle(x, y, MotorcycleSpeed, distanceW, pictureBoxAmbulance);
+
+            x = pictureBoxHelicopter.Location.X;
+            y = pictureBoxHelicopter.Location.Y;
+            distanceW = formSizeW - pictureBoxHelicopter.Size.Width;
+            motorcycle = new Motorcycle(x, y, MotorcycleSpeed, distanceW, pictureBoxHelicopter);
+
+            random = new Random();
+
+            labelNotice.Text = "";
         }
     }
 }

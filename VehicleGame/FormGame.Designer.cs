@@ -31,7 +31,7 @@ namespace VehicleGame
         {
             this.components = new System.ComponentModel.Container();
             this.buttonStart = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
+            this.labelNotice = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBoxAmbulance = new System.Windows.Forms.PictureBox();
             this.pictureBoxHelicopter = new System.Windows.Forms.PictureBox();
@@ -52,16 +52,16 @@ namespace VehicleGame
             this.buttonStart.Text = "スタート";
             this.buttonStart.UseVisualStyleBackColor = true;
             // 
-            // label1
+            // labelNotice
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label1.ForeColor = System.Drawing.Color.Red;
-            this.label1.Location = new System.Drawing.Point(93, 13);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(52, 16);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "label1";
+            this.labelNotice.AutoSize = true;
+            this.labelNotice.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.labelNotice.ForeColor = System.Drawing.Color.Red;
+            this.labelNotice.Location = new System.Drawing.Point(93, 13);
+            this.labelNotice.Name = "labelNotice";
+            this.labelNotice.Size = new System.Drawing.Size(52, 16);
+            this.labelNotice.TabIndex = 1;
+            this.labelNotice.Text = "label1";
             // 
             // pictureBox1
             // 
@@ -112,7 +112,7 @@ namespace VehicleGame
             this.Controls.Add(this.pictureBoxAmbulance);
             this.Controls.Add(this.pictureBoxHelicopter);
             this.Controls.Add(this.pictureBoxMotorcycle);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.labelNotice);
             this.Controls.Add(this.buttonStart);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "FormGame";
@@ -130,7 +130,7 @@ namespace VehicleGame
         #endregion
 
         private System.Windows.Forms.Button buttonStart;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label labelNotice;
         private System.Windows.Forms.PictureBox pictureBoxMotorcycle;
         private System.Windows.Forms.PictureBox pictureBoxHelicopter;
         private System.Windows.Forms.PictureBox pictureBoxAmbulance;
